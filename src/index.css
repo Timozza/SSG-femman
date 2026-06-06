@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 10% 95%;
+    --foreground: 210 15% 15%;
+
+    --card: 30 8% 92%;
+    --card-foreground: 210 15% 15%;
+
+    --popover: 30 10% 95%;
+    --popover-foreground: 210 15% 15%;
+
+    --primary: 36 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 25% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 30 5% 85%;
+    --muted-foreground: 210 10% 25%;
+
+    --accent: 210 20% 30%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 80%;
+    --input: 30 10% 80%;
+    --ring: 36 80% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 15% 15%;
+    --sidebar-foreground: 30 10% 90%;
+    --sidebar-primary: 36 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 22%;
+    --sidebar-accent-foreground: 30 10% 90%;
+    --sidebar-border: 210 15% 25%;
+    --sidebar-ring: 36 80% 50%;
+
+    --steel: 210 15% 55%;
+    --forest: 150 35% 28%;
+    --mine: 25 15% 25%;
+  }
+
+  .dark {
+    --background: 210 15% 10%;
+    --foreground: 30 10% 90%;
+
+    --card: 210 15% 14%;
+    --card-foreground: 30 10% 90%;
+
+    --popover: 210 15% 10%;
+    --popover-foreground: 30 10% 90%;
+
+    --primary: 36 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 25% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 12% 20%;
+    --muted-foreground: 30 5% 60%;
+
+    --accent: 210 20% 25%;
+    --accent-foreground: 30 10% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 12% 22%;
+    --input: 210 12% 22%;
+    --ring: 36 80% 50%;
+
+    --sidebar-background: 210 15% 8%;
+    --sidebar-foreground: 30 10% 90%;
+    --sidebar-primary: 36 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 15%;
+    --sidebar-accent-foreground: 30 10% 90%;
+    --sidebar-border: 210 12% 15%;
+    --sidebar-ring: 36 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+  }
+}
